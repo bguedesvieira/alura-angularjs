@@ -10,7 +10,8 @@ angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
             controller: 'FotosController'
         });
         $routeProvider.when('/fotos/new', {
-            templateUrl: 'partials/fotos.html'
+            templateUrl: 'partials/foto.html',
+            controller: 'FotoController'
         });
         $routeProvider.otherwise({
             redirectTo: '/fotos'
