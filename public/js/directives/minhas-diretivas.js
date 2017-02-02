@@ -33,6 +33,6 @@ angular.module('minhasDiretivas', [])
             url: '@url'
         };
 
-        ddo.transclude = true;
+        //ddo.transclude = true;
         ddo.template = '<img class="img-responsive center-block" src="{{url}}" alt="{{titulo}}">';
     });

@@ -1,5 +1,3 @@
-// public/js/main.js
-
 angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
     .config(function($routeProvider, $locationProvider) {
 
@@ -9,11 +7,12 @@ angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
             templateUrl: 'partials/principal.html',
             controller: 'FotosController'
         });
+
         $routeProvider.when('/fotos/new', {
             templateUrl: 'partials/foto.html',
             controller: 'FotoController'
         });
-        $routeProvider.otherwise({
-            redirectTo: '/fotos'
-        });
+
+        $routeProvider.otherwise({ redirectTo: '/fotos' });
+
     });
