@@ -32,6 +32,7 @@ angular.module('alurapic')
                         $scope.foto = {};
                         $scope.formulario.$setPristine();
                     }
+                    $scope.focado = true;
                 }).catch(function(error){
                     $scope.mensagem = error.mensagem;
                 });
